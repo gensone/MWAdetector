@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' ">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <div class="headerimg"><img id="headerimg" src="header.png"></img></div>
+  </head>
+
+<body>
+     <script type="text/javascript" src="popup.js"></script>
+     
+     <hr>
+
+     <div id="callsdetectedtitle"></div>
+     
+     <div id="callsdetected"></div>
+
+     <hr>
+     <br>
+
+     <div id="rulesenforced"></div>
+
+     <hr>
+     
+     <div class="activator_container">
+		<div id="default">
+			<h1>DEFAULT SETTINGS</h1> 
+				<input type="checkbox" id="ord" name="OrientationD" value="Device Orientation"><label id='box' for='ord'>  Device Orientation</label><br>
+				<input type="checkbox" id="mod" name="MotionD" value="Device Motion"><label id='box' for='mod'>  Device Motion</label><br>
+				<input type="checkbox" id="lid" name="LightD" value="Ambient Light"><label id='box' for='lid'>   Ambient Light</label><br>
+				<input type="checkbox" id="prd" name="ProximityD" value="Proximity"><label id='box' for='prd'>  Proximity</label><br>  
+				<input type="checkbox" id="chd" name="ChangeD" value="Orientation Change"><label id='box' for='chd'>  Orientation Change</label><br>
+				<input type="checkbox" id="pod" name="PositionD" value="Position"><label id='box' for='pod'>  Position</label><br>
+				<input type="checkbox" id="vid" name="VibrationD" value="Vibration"><label id='box' for='vid'>  Vibration</label><br>
+				<input type="checkbox" id="med" name="MediaD" value="Media"><label id='box' for='med'>  Media</label><br>
+				<button type="button" id="submitdef">Modify Default</button><br>
+	     			
+		</div>     
+	     </div>
+
+     <hr> 
+
+
+     <div id='bottom' class="activator_container">
+	<div id="custom">
+	        <h1>ADD CUSTOM RULES</h1>
+			<div id='add_domain'>
+			<input type="text" id="custdom" name="customdomain" placeholder="*.example.com">
+			<button id='geturl'>Get current domain</button>
+			</div>
+			<p id="domainresponse"></p>
+			<input type="checkbox" id="or" name="Orientation" value="Device Orientation"><label id='box' for='or'> Device Orientation</label><br>
+			<input type="checkbox" id="mo" name="Motion" value="Device Motion"><label id='box' for='mo'>  Device Motion</label><br>
+			<input type="checkbox" id="li" name="Light" value="Ambient Light"><label id='box' for='li'>  Ambient Light</label><br>
+			<input type="checkbox" id="pr" name="Proximity" value="Proximity"><label id='box' for='pr'>  Proximity</label><br> 
+			<input type="checkbox" id="ch" name="Change" value="Orientation Change"><label id='box' for='ch'>  Orientation Change</label><br>
+			<input type="checkbox" id="po" name="Position" value="Position"><label id='box' for='po'>  Position</label><br>
+			<input type="checkbox" id="vi" name="Vibration" value="Vibration"><label id='box' for='vi'>  Vibration</label><br>
+			<input type="checkbox" id="me" name="Media" value="Media"><label id='box' for='me'>  Media</label><br>
+			<button type="button" id="submitcust">Add Custom</button> 
+	</div>     
+     </div>
+
+     <br><hr><br>
+     <div id='centerbutton'>
+     <a id='buttonlink' href="rules.html"><button id='modifyrules'>MODIFY CUSTOM RULES</button></a>
+     </div>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+{
+
+  "applications": {
+    "gecko": {
+       "id": "detector@genso.com"
+    }
+  },
+
+  "manifest_version": 2,
+  "name": "Detector",
+  "version": "1.0",
+
+  "description": "Detects all mobile specific WEBAPI calls from websites",
+
+  "icons": {
+    "48": "icons/logo48.png",
+    "96": "icons/logo96.png"
+  },
+
+  "browser_action": {
+    "browser_style": true,
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/logo16.png",
+      "32": "icons/logo32.png"
+    }
+  },
+
+  "content_scripts": [
+    {
+      "run_at": "document_start",
+      "match_about_blank": true,
+      "all_frames": true,
+      "matches": ["<all_urls>"],
+      "js": ["injector.js"]
+    }
+  ],
+
+  "web_accessible_resources": ["*.js"],
+
+  "permissions": [
+  	"<all_urls>",
+	"storage",
+  	"webRequest",
+	"tabs"
+  ],
+
+  "background": {
+  "scripts": ["background.js"]
+  }
+}

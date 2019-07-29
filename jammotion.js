@@ -1,0 +1,1 @@
+Object.defineProperty(DeviceMotionEvent.prototype, 'acceleration', {get: function () {}});Object.defineProperty(DeviceMotionEvent.prototype, 'accelerationIncludingGravity', {get: function () {}});Object.defineProperty(DeviceMotionEvent.prototype, 'interval', {get: function () {}});Object.defineProperty(DeviceMotionEvent.prototype, 'rotationRate', {get: function () {}});

@@ -1,0 +1,346 @@
+div.headerimg {
+	position:relative;
+	width:100%;
+	height:140px;
+}
+
+#headerimg {
+	position:absolute;
+	width:128px;
+	height:128px;
+	margin:auto;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+}
+
+body {
+    width:96%;
+    height:100%;
+    margin: 20px 20px 20px 20px;
+    /*background-color:#D6D6C2;*/
+    background-color: rgba(214, 214, 194, .3);
+    /*background: repeating-linear-gradient(0px 50%, transparent 90%, rgba(255, 255, 255, 0.25) 50%);*/
+    /*background: repeating-linear-gradient(90deg, rgba(255,0,0,0.20), rgba(255,0,0,0.20) 0.5px, white 0.5px, white 10px);*/
+}
+
+div.activator_container {
+    display:block;
+    float:top;
+    height:1000px;
+    width:90%;
+}
+
+div#bottom{
+	margin: 0px 0px 0px 0px;
+	height:1200px;
+}
+
+#callsdetectedtitle {
+    font-size:40px;
+    text-align:center;
+}
+
+#callsdetected {
+    text-align:center;
+    font-size:30px;
+}
+
+button {
+    float:left;
+    width:40%;
+    height:100%;
+    font-size:45px;
+    text-align:center;
+    border:solid;
+    vertical-align:middle;
+    margin: 5% 0% 0% 10%;
+    /*margin: 5px 0px 0px 0px;*/
+}
+
+a.button {
+    float:left;
+    width:40%;
+    height:100%;
+    font-size:45px;
+    text-align:center;
+    border:solid;
+    vertical-align:middle;
+    margin: 5% 0% 0% 10%;
+    /*margin: 5px 0px 0px 0px;*/
+}
+
+div.unit_act {
+    height:20%;
+    margin: 15px 0px 0px 0px;
+}
+
+div.status {
+    font-size:50px;
+    float:left;
+    width: 30%;
+    margin-left:10%;
+}
+
+p.all {
+    text-align:center;
+    vertical-align:middle;
+    color:red;
+}
+
+p.block {
+    text-align:center;
+    vertical-align:middle;
+    color:green;
+}
+
+hr { 
+    display: block;
+    color: red; 
+    width:100%;
+    /*margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;*/
+}
+
+div#rulesenforced{
+    font-size:35px;
+
+}
+
+span.domainname{
+	color:red;
+	text-decoration:underline;
+}
+
+
+label#box{
+	position:relative;
+	top: -20px;
+	margin-left:9px;
+	font-size: 35px;
+	vertical-align: middle;
+}
+
+
+input[type="checkbox"] {
+	min-height:80px;
+	min-width:80px;
+}
+/*
+input[type=checkbox] {
+  opacity: 0;
+}
+
+input[type=checkbox] + label#box::before {
+  content: ' ';
+  position: absolute;
+  left: -85px;
+  top: -5px;
+  min-width: 80px;
+  min-height: 80px;
+  display: block;
+  background: white;
+  border: 5px solid #A9A9A9;
+}
+
+input[type=checkbox] + label#box::after {
+  content: ' ';
+  position: absolute;
+  left: -85px;
+  top: -5px;
+  min-width: 80px;
+  min-height: 80px;
+  display: block;
+  z-index: 1;
+  background-color:red;
+  background: url("https://i2.wp.com/www.accredited-times.com/wp-content/uploads/2016/12/red-tick.png?fit=1229%2C1280&ssl=1") no-repeat center center;
+  opacity: 0;
+}
+
+input[type=checkbox]:checked + label#box::after {
+  opacity: 1;
+}
+*/
+input[type="text"] {
+	min-height:80px;
+	min-width:70%;
+	font-size:35px;
+}
+
+#geturl{
+    width: 15%;
+    flex:1;
+    margin-left:5%;
+    font-size:30px;
+    top:-28px;
+}
+
+
+
+button {
+  position: relative;
+
+  display: block;
+  margin: 30px auto;
+  padding: 0;
+
+  overflow: hidden;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  
+  background-color: #ff0000;
+  color: #ecf0f1;
+  
+  transition: background-color .3s;
+}
+
+button:hover, button:focus {
+  background-color: #ff3333;
+}
+
+button > * {
+  position: relative;
+}
+
+button span {
+  display: block;
+  padding: 12px 24px;
+}
+
+button:before {
+  content: "";
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  display: block;
+  width: 0;
+  padding-top: 0;
+    
+  border-radius: 100%;
+  
+  background-color: rgba(236, 240, 241, .3);
+  
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+button:active:before {
+  width: 120%;
+  padding-top: 120%;
+  
+  transition: width .2s ease-out, padding-top .2s ease-out;
+}
+
+/* Styles, not important */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+#add_domain{
+    display:flex;
+    width:95%;
+}
+
+#custdom{
+    flex:1;
+    max-height: 80px;
+}
+
+#buttonlink{
+	display:flex;
+	align:center;
+	margin:auto;
+}
+
+#modifyrules{
+	align:center;
+	margin:auto;
+
+    
+}
+
+#centerbutton{
+    align:center;
+    margin:auto;
+}
+
+#domainresponse{
+    font-size:30px;
+}
+
+
+
+/* ------------------------------ RULES PAGE ----------------------------*/
+
+#rules {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#rules td, #rules th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#rules tr:nth-child(even){background-color: #f2f2f2;}
+
+#rules tr:hover {background-color: #ddd;}
+
+#rules th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #ff0000;
+    color: white;
+}
+
+#buttons{
+    /*width: 220px;
+    height: 300px;*/
+    border: 0px solid black; 
+    display: flex;
+    align-items: center;
+    margin-top:10px;
+}
+
+#buttons button{
+    /* flex:1;*/
+}
+
+#buttons a{
+    /*flex:1;*/
+}
+
+.deletebutton{
+    font-size:20px;
+    width:100%;
+    height:90%;
+}
+
+#link_back{
+	max-width:20%;
+}
+
+#clearall{
+	max-width:45%;
+	align:right;
+	margin-left:45%;
+}
+
+#back{
+	width:100%;
+}

@@ -1,0 +1,1 @@
+Object.defineProperty(DeviceProximityEvent.prototype, 'min', {get: function () {}});Object.defineProperty(DeviceProximityEvent.prototype, 'max', {get: function () {}});Object.defineProperty(DeviceProximityEvent.prototype, 'value', {get: function () {}});Object.defineProperty(UserProximityEvent.prototype, 'near', {get: function () {}});
